@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Custom Fuzz Pedál</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #0f0f12;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+section {
+    padding: 100px 10%;
+}
+
+h1, h2, h3 {
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 20px;
+    color: #cccccc;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    background: linear-gradient(to bottom right, #000000, #1a1a1f);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+}
+
+.hero span {
+    color: #e10600;
+}
+
+.hero p {
+    max-width: 600px;
+    font-size: 1.1rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 28px;
+    background: #e10600;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #ff2a2a;
+}
+
+/* ABOUT */
+.about {
+    background: #151519;
+}
+
+/* FEATURES */
+.features {
+    background: #0f0f12;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.feature-box {
+    background: #1c1c22;
+    padding: 30px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.feature-box:hover {
+    transform: translateY(-5px);
+    background: #22222a;
+}
+
+/* GALLERY */
+.gallery {
+    background: #151519;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* PRICE */
+.price {
+    text-align: center;
+    background: #0f0f12;
+}
+
+.price-box {
+    background: #1c1c22;
+    display: inline-block;
+    padding: 40px;
+    border-radius: 12px;
+    margin-top: 20px;
+}
+
+.price-box h2 {
+    font-size: 2.5rem;
+    color: #e10600;
+}
+
+/* CONTACT */
+.contact {
+    background: #151519;
+}
+
+form {
+    max-width: 600px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 6px;
+    background: #1c1c22;
+    color: white;
+}
+
+textarea {
+    resize: none;
+    height: 120px;
+}
+
+button {
+    padding: 14px 28px;
+    border: none;
+    border-radius: 6px;
+    background: #e10600;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #ff2a2a;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 30px;
+    background: #0b0b0e;
+    color: #777;
+}
+
+@media(max-width: 768px){
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+}
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+    <h1>Custom <span>Fuzz Pedál</span></h1>
+    <p>Analógový gitarový efekt s transformátorovým zdvojením signálu. Agresívny, hutný a experimentálny zvuk pre extrémne hudobné žánre.</p>
+    <a href="#kontakt" class="btn">Objednať teraz</a>
+</section>
+
+<!-- ABOUT -->
+<section class="about">
+    <h2>O projekte</h2>
+    <p>
+        Tento pedál vznikol ako maturitná práca zameraná na návrh, konštrukciu a testovanie analógového fuzz efektu.
+        Inšpirovaný klasickými vintage obvodmi, ale upravený pre moderný agresívny zvuk.
+    </p>
+    <p>
+        Obsahuje viacstupňové tranzistorové zosilnenie, germániové diódy a dvojicu audio transformátorov,
+        ktoré vytvárajú jedinečnú saturáciu a kompresiu.
+    </p>
+</section>
+
+<!-- FEATURES -->
+<section class="features">
+    <h2>Hlavné vlastnosti</h2>
+    <div class="feature-grid">
+        <div class="feature-box">
+            <h3>🎛 Silné skreslenie</h3>
+            <p>Viacstupňové tranzistorové zapojenie vytvára hutný fuzz charakter.</p>
+        </div>
+        <div class="feature-box">
+            <h3>🔊 Transformátorový výstup</h3>
+            <p>Dodáva prirodzenú kompresiu a vintage charakter zvuku.</p>
+        </div>
+        <div class="feature-box">
+            <h3>⚡ Boost regulácia</h3>
+            <p>Možnosť ovplyvniť mieru saturácie a agresivity efektu.</p>
+        </div>
+        <div class="feature-box">
+            <h3>🛠 Ručná výroba</h3>
+            <p>Každý kus je ručne osadený a testovaný.</p>
+        </div>
+    </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery">
+    <h2>Galéria</h2>
+    <div class="gallery-grid">
+        <img src="img/IMG_5468-Photoroom.png" alt="Pedál 1">
+        <img src="img/IMG_5467-Photoroom.png" alt="Pedál 2">
+        <img src="img/IMG_5466-Photoroom.png" alt="Pedál 3">
+        <img src="img/IMG_5465-Photoroom.png" alt="Pedál 4">
+    </div>
+</section>
+
+<!-- PRICE -->
+<section class="price">
+    <h2>Cena</h2>
+    <div class="price-box">
+        <p>Ručne vyrábaný analógový fuzz pedál</p>
+        <h2>99 €</h2>
+        <p>Možnosť individuálnej dohody</p>
+        <a href="#kontakt" class="btn">Mám záujem</a>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="kontakt">
+    <h2>Objednávka / Kontakt</h2>
+    <p>Vyplň formulár a budem ťa kontaktovať ohľadom dostupnosti alebo individuálnej výroby.</p>
+
+    <form>
+        <input type="text" placeholder="Tvoje meno" required>
+        <input type="email" placeholder="Tvoj email" required>
+        <textarea placeholder="Správa / Záujem o objednávku"></textarea>
+        <button type="submit">Odoslať</button>
+    </form>
+</section>
+
+<footer>
+    © 2026 Custom Fuzz Pedál | Maturitný projekt
+</footer>
+
+</body>
+</html>
